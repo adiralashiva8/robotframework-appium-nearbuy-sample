@@ -6,7 +6,7 @@ Sample scripts to automate nearbuy app using robotframework + appium
 
 ## Framework
 
- - apk --> Consist apk to test
+ - apk --> Consist apk under test
 
  - common --> Reusable keywords
 
@@ -38,6 +38,22 @@ Sample scripts to automate nearbuy app using robotframework + appium
  - Download & Install Appium Doctor
 
    > Validate installation at every step
+
+---
+
+## Execution of tests
+
+ Appium server will be started & stopped through code. For code refer `appium_helper.py`
+
+ - Execute all suites (all suites present under tests folder)
+   > `robot tests`
+
+ - Execute specific suite
+   > `robot tests/home_tests.robot`
+
+ - Execute specific test in suite
+   > `robot -t "Validate Available Standard Icons In Home Screen" tests/home_tests.robot`
+
 
 ---
 
