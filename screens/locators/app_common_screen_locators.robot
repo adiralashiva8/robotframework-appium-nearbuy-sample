@@ -7,3 +7,4 @@
 ...  image_banner=id=banner_image
 ...  first_image=id=imagev1
 ...  back_arrow_icon=id=iv_back
+...  left_icon=id=ib_left_icon

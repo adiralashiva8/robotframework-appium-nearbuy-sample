@@ -4,11 +4,11 @@ Resource    ${EXECDIR}${/}screens${/}locators${/}home_screen_locators.robot
 *** Keywords ***
 More Icon Should Be Present
     Wait Until Page Contains Element    ${HOME_SCREEN_LOCATORS.more_icon}
-    Widget Textview Should Be Present    More
+    Text Widget Should Be Present    More
 
 More Icon Should Not Be Present
     Wait Until Page Does Not Contain Element    ${HOME_SCREEN_LOCATORS.more_icon}
-    Widget Textview Should Not Be Present    More
+    Text Widget Should Not Be Present    More
 
 Home Screen: Click On Quick Search Icon
     Wait Until Page Contains Element    ${HOME_SCREEN_LOCATORS.search_icon}

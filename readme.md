@@ -6,17 +6,15 @@ Sample scripts to automate nearbuy app using robotframework + appium
 
 ## Framework
 
- - apk --> Consist apk under test
-
  - common --> Reusable keywords
 
- - lib --> useful python codes
+ - libs --> useful python codes
 
  - screens (pom concept)
    - locators --> page level locators
    - keywords --> page level keyword
 
- - test_data --> test data like appActivity, credentials etc.,
+ - test_data --> test data like appActivity, credentials, webdriver, apk etc.,
 
  - tests --> collection of test suites
 
@@ -37,6 +35,9 @@ Sample scripts to automate nearbuy app using robotframework + appium
 
  - Download & Install Appium Doctor
 
+ - Install robotframework, robotframework-appium (project root folder)
+   `pip install -r requirements.txt`
+
    > Validate installation at every step
 
 ---
@@ -54,6 +55,30 @@ Sample scripts to automate nearbuy app using robotframework + appium
  - Execute specific test in suite
    > `robot -t "Validate Available Standard Icons In Home Screen" tests/home_tests.robot`
 
+ - Execute by tag name
+   > `robot -i home tests`
+
+### Bat file
+
+  To avoid typing command, created bat file to execute all suites. This includes
+
+  > `run.bat`
+
+    - Executes all tests
+    - Live results
+      <img src="/results/Live_View.png" alt="LiveLogs">
+
+    - Send email after complete execution
+      <img src="/results/email_view.png" alt="Email">
+
+    - Create metrics report after execution
+      <img src="/results/Metrics_View.png" alt="Metrics">
+
+### Pre-requisties
+
+ - Neabuy app should be installed in emulator / device
+ - Select location
+ - Skip login
 
 ---
 
@@ -98,6 +123,12 @@ Sample scripts to automate nearbuy app using robotframework + appium
    adb -e install apkfile.apk
    ```
 
+---
 ## Helpful Links
 
  - [Awesome Appium](https://github.com/SrinivasanTarget/awesome-appium)
+ - [Robotframework](https://github.com/robotframework/robotframework)
+ - [Robotframework Appium](https://github.com/serhatbolsu/robotframework-appiumlibrary)
+ - [Email Listener](https://github.com/adiralashiva8/robotframework-email)
+ - [Robotframework Metrics](https://github.com/adiralashiva8/robotframework-metrics)
+ - [Live Logs](https://github.com/adiralashiva8/robotframework-live-logs)

@@ -1,10 +1,11 @@
 *** Settings ***
 Documentation     Collection of home page test cases
 Library           AppiumLibrary
-Library           ${EXECDIR}${/}lib${/}appium_helper.py
-Resource          ${EXECDIR}${/}impl${/}home_test_impl.robot
+Library           ${EXECDIR}${/}libs${/}appium_helper.py
+Resource          ${EXECDIR}${/}impl${/}home_tests_impl.robot
 Suite Setup       Common Suite Setup
 Suite Teardown    Common Suite Teardown
+Force Tags        home
 
 *** Test Cases ***
 Validate Available Standard Icons In Home Screen

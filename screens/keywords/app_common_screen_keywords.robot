@@ -8,12 +8,12 @@ Wait Until Loading Indicator Disappear
     Wait Until Keyword Succeeds    ${retry}    ${retry_interval}
     ...    Wait Until Page Does Not Contain Element    ${APP_COMMON_SCREEN_LOCATORS.loading_indicator_icon}
 
-Widget Textview Should Be Present
+Text Widget Should Be Present
     [Arguments]    ${text}
     ${locator}=    Replace Placeholder    ${APP_COMMON_SCREEN_LOCATORS.common_widget_text}    TEXT    ${text}
     Wait Until Page Contains Element    ${locator}
 
-Widget Textview Should Not Be Present
+Text Widget Should Not Be Present
     [Arguments]    ${text}
     ${locator}=    Replace Placeholder    ${APP_COMMON_SCREEN_LOCATORS.common_widget_text}    TEXT    ${text}
     Wait Until Page Does Not Contain Element    ${locator}
@@ -22,13 +22,13 @@ List Of Text Widget Should Be Present
     [Arguments]    @{text}
     :FOR   ${text}    IN    @{text}
         \    Run Keyword And Continue On Failure
-             ...    Widget Textview Should Be Present    ${text}
+             ...    Text Widget Should Be Present    ${text}
 
 List Of Text Widget Should Not Be Present
     [Arguments]    @{text}
     :FOR   ${text}    IN    @{text}
         \    Run Keyword And Continue On Failure
-             ...    Widget Textview Should Not Be Present    ${text}
+             ...    Text Widget Should Not Be Present    ${text}
 
 Get Image Widget By Index
     [Arguments]    ${index}
@@ -44,3 +44,7 @@ Click On Text Widget
 Click Back Arrow Icon
     Wait Until Page Contains Element    ${APP_COMMON_SCREEN_LOCATORS.back_arrow_icon}
     Click Element    ${APP_COMMON_SCREEN_LOCATORS.back_arrow_icon}
+
+Click Left Icon
+    Wait Until Page Contains Element    ${APP_COMMON_SCREEN_LOCATORS.left_icon}
+    Click Element    ${APP_COMMON_SCREEN_LOCATORS.left_icon}

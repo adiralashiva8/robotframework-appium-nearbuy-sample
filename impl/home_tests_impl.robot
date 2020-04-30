@@ -10,6 +10,10 @@ Standard Icons Should Be Present In Home Screen
     List Of Text Widget Should Be Present
     ...    Home    Search    Pulse    Purchases
 
+Standard Icons Should Not Be Present In Home Screen
+    List Of Text Widget Should Not Be Present
+    ...    Home    Search    Pulse    Purchases
+
 Quick Search Icons Should Be Present In Home Screen
     List Of Text Widget Should Be Present
     ...    Maha Cash Voucher    Pulse    Restaurants
@@ -71,7 +75,6 @@ Web: Click On Menu In Blog
     ...    Click Element    xpath=//button[text()='Menu']
     Sleep   2s
     Capture Page Screenshot
-    Close Application
 
 Go Back To App Home Screen
     Switch To Context    ${NEARBUY_CONTEXT}

@@ -26,7 +26,7 @@ Common Suite Setup
     Launch Nearbuy Application
 
 Common Suite Teardown
-    Close Application
+    Close All Applications
     Stop Appium Server
 
 Re-Launch Application
