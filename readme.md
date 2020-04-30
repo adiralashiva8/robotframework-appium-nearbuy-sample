@@ -8,13 +8,22 @@ Sample scripts to automate nearbuy app using robotframework + appium
 
  - common --> Reusable keywords
 
+ - impl --> implementation of test cases
+
  - libs --> useful python codes
+
+ - listeners --> robotframework listeners to send email, livelogs etc
+
+ - results --> folder for storing results
 
  - screens (pom concept)
    - locators --> page level locators
    - keywords --> page level keyword
 
  - test_data --> test data like appActivity, credentials, webdriver, apk etc.,
+    - apk
+    - test cases
+    - drivers
 
  - tests --> collection of test suites
 
@@ -65,14 +74,9 @@ Sample scripts to automate nearbuy app using robotframework + appium
   > `run.bat`
 
   - Executes all tests
-  - Live results
-    <img src="/results/Live_View.png" alt="LiveLogs">
-
-  - Send email after complete execution
-    <img src="/results/email_view.png" alt="Email">
-
-  - Create metrics report after execution
-    <img src="/results/Metrics_View.png" alt="Metrics">
+  - Live results - [Image Link](/results/Live_View.png)
+  - Send email after complete execution - [Image Link](/results/email_view.png)
+  - Create metrics report after execution - [Image Link](/results/Metrics_View.png)
 
 ### Pre-requisties
 
@@ -103,8 +107,7 @@ Sample scripts to automate nearbuy app using robotframework + appium
 
  - Validate appActivity (execute following commands)
    ```
-   adb shell
-   am start -n appPackage/appActivity
+   adb shell am start -n appPackage/appActivity
    ```
 
  - Kill open instances
