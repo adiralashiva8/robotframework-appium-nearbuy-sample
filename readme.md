@@ -25,7 +25,7 @@ Sample scripts to automate nearbuy app using robotframework + appium
  - Download node.exe
 
  - Install appium
-   `npm install -g appium`
+   > `npm install -g appium`
 
  - Download & Install Andriod Studio (.zip file)
 
@@ -36,7 +36,7 @@ Sample scripts to automate nearbuy app using robotframework + appium
  - Download & Install Appium Doctor
 
  - Install robotframework, robotframework-appium (project root folder)
-   `pip install -r requirements.txt`
+   > `pip install -r requirements.txt`
 
    > Validate installation at every step
 
@@ -58,21 +58,21 @@ Sample scripts to automate nearbuy app using robotframework + appium
  - Execute by tag name
    > `robot -i home tests`
 
-### Bat file
+### Executes all tests using .bat file
 
   To avoid typing command, created bat file to execute all suites. This includes
 
   > `run.bat`
 
-    - Executes all tests
-    - Live results
-      <img src="/results/Live_View.png" alt="LiveLogs">
+  - Executes all tests
+  - Live results
+    <img src="/results/Live_View.png" alt="LiveLogs">
 
-    - Send email after complete execution
-      <img src="/results/email_view.png" alt="Email">
+  - Send email after complete execution
+    <img src="/results/email_view.png" alt="Email">
 
-    - Create metrics report after execution
-      <img src="/results/Metrics_View.png" alt="Metrics">
+  - Create metrics report after execution
+    <img src="/results/Metrics_View.png" alt="Metrics">
 
 ### Pre-requisties
 
